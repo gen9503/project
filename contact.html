@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Contact </title>
+
+  <style>
+  *{
+    padding: 0;
+    margin: 0;
+   }
+ 
+ body{
+   min-height: 100vh;
+   font-family:Arial,'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+   font-size: 18px;
+   color: #202020;
+   background-image: url(images/background.jpg);
+   background-repeat: no-repeat;
+   font-weight: normal;
+ }
+.box2 {
+          margin: auto;
+          width: 40%;
+          float: right;
+          height: 750px;
+}
+.box2 h1 {
+            text-align: center;
+        }
+
+.form {
+            border-radius: 50px;
+            background-color: #cb8262;
+            padding: 20px;
+            margin-top: 150px;
+          }
+
+    input[type=text], select {
+      width: 100%;
+      padding:12px 20px ;
+      margin: 8px 0;
+      box-sizing:border-box ;
+
+            /* The CSS box-sizing property allows us to include the padding and border in an element's total width and height. */
+    border: 1px solid #ccc;
+            border-radius: 4px;
+    }
+
+    .box2 tr{
+      width: 480;
+      height: 200px;
+      font-family: Arial;
+      font-size: 18px;
+    }
+
+      input[type=submit]{
+            width: 100%;
+            background-color: #bf8f78;
+            color: white;
+            padding: 14px;
+            border-radius: 4px;   
+   }
+
+   input[type=submit]:hover {
+            background-color: #a05d4d;
+        }
+        @media screen and (max-width: 800px) {
+		  .box1 {
+            height: 100px;
+			      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+		  }
+      .box2 {
+			height: 800px;
+			margin-top: 20px;
+			width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+		  }
+}
+
+  </style>
+</head>
+
+<body>
+  
+  <div class="box1">
+        
+  </div>
+
+  <div class="box2">
+      <div class="form">
+          <h1>Get in touch</h1>
+          <form>
+              <label>First Name</label>
+              <input type="text" placename="firstname" placeholder="Your Name">
+              <label>Last Name</label>
+              <input type="text" placename="lastname" placeholder="Your Lastname">
+              <label>Email</label>
+              <input type="text" placename="Email" placeholder="Your Email">
+              
+              <tr>
+                <td><label>Message</label></td>
+                <td><textarea name="message" style="height: 200px; width: 480px; "placeholder="Message...."></textarea></td>
+              
+              </tr>
+              <input type="submit" value="Submit">
+          </form>
+      </div>
+  </div>
+
+</body>
+</html>
